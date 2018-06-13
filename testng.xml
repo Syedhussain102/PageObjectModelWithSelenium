@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Free CRM Automation Test Suite">
+  
+  <listeners>
+  <listener class-name="com.crm.qa.extentReport.ExtentReportListener"></listener>
+  </listeners>
+  
+  
+  <test thread-count="5" verbose="2" name="Free CRM app Test Cases">
+    <classes>
+      <class name="com.crm.qa.TestCase.LoginPageTest"/>
+      <class name="com.crm.qa.TestCase.HomePageTest"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
